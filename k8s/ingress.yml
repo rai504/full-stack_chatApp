@@ -10,7 +10,7 @@ metadata:
     nginx.ingress.kubernetes.io/ssl-redirect: "false"
 spec:
   rules:
-  - host: chat-tws.com
+  - host: chat-app-by-dpk:81
     http:
       paths:
       - pathType: Prefix
@@ -19,7 +19,7 @@ spec:
           service:
             name: frontend
             port: 
-              number: 80
+              number: 81
       - pathType: Prefix
         path: "/api"
         backend:

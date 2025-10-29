@@ -17,13 +17,9 @@ spec:
     spec:
       containers:
       - name: chatapp-frontend
-        image: trainwithshubham/chatapp-frontend
+        image: deep089/chatapp-frontend:latest
         ports:
         - containerPort: 80
         env:
         - name: NODE_ENV
           value: production
-          
-
-
-
